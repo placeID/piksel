@@ -1,0 +1,15 @@
+{
+	"VERSI": 1,
+	"structures": {
+		"kosong": {
+			"priority": 0,
+			"pixels": []
+		}
+	},
+	"priorities": {
+		"0": 0,
+		"1": 1,
+		"2": 5,
+		"3": 10
+	}
+}
