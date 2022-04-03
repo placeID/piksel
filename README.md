@@ -8,8 +8,8 @@ Gambar desain diubah menjadi bentuk kode untuk bot dengan [program ini](https://
 
 | Nama | Gambar | Asli |
 |:----:|:------:|:----:|
-| `"indomieUtama"` | (lihat di Discord) | (lihat di Discord) |
-| `"indomieSampingan"` | (lihat di Discord) | (lihat di Discord) |
+| `"indomieUtama"` | ![gambar desain indomieUtama](https://raw.githubusercontent.com/placeID/piksel/main/gambar/5-x16-indomie-utama.png) | [asli](https://github.com/placeID/piksel/blob/main/gambar/5-indomie-utama.png) |
+| `"indomieSampingan"` | ![gambar desain indomieSampingan](https://raw.githubusercontent.com/placeID/piksel/main/gambar/5-x16-indomie-sampingan.png) | [asli](https://github.com/placeID/piksel/blob/main/gambar/5-indomie-sampingan.png) |
 | `"benderaID"` (dihapus sementara) | (kosong, menunggu gambar jadi) | (kosong) |
 | `"sila"` (dihapus sementara) | ![gambar desain sila](https://raw.githubusercontent.com/placeID/piksel/main/gambar/2-x16-sila-pancasila.png) | [asli](https://github.com/placeID/piksel/blob/main/gambar/2-sila-pancasila.png) |
 | `"rindo"` (dihapus sementara) | ![gambar desain rindo](https://raw.githubusercontent.com/placeID/piksel/main/gambar/3-x16-r-indo.png) | [asli](https://github.com/placeID/piksel/blob/main/gambar/3-r-indo.png) |
