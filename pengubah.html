@@ -7,13 +7,15 @@
 </head>
 <body>
 	<h1>Pengubah gambar ke kode piksel untuk bot</h1>
-	<p>
+	<div>
 		<b>Titik kiri atas:</b>
 		<label>absis (sumbu x): <input id="ax" type="number" value="0"></label>
 		<label>ordinat (sumbu y): <input id="ay" type="number" value="0"></label>
-	</p>
+	</div>
 	<br>
 	<label><b>Gambar:</b> <input id="input" type="file" accept="image/png"> (hanya PNG)</label>
+	<br><br>
+	<label><b>Prioritas:</b> <input id="pr" type="number" value="3"></label>
 	<br>
 	<canvas id="kanvas" style="height:0;width:0;"></canvas>
 	<br>
@@ -74,6 +76,9 @@ function olahGambar() {
 	if (gambar == null) {
 		return;
 	}
+	const ax_ = Number(ax.value);
+	const ay_ = Number(ay.value);
+	const pr_ = Number(pr.value);
 	kanvas.style.width = (kanvas.width = gambar.width) * 4 + "px";
 	kanvas.style.height = (kanvas.height = gambar.height) * 4 + "px";
 	const konteks = kanvas.getContext("2d");
@@ -90,10 +95,10 @@ function olahGambar() {
 		const warna = rgbKeHeks(data[indeks4 + 0], data[indeks4 + 1], data[indeks4 + 2]).toUpperCase();
 		const kode = PETA_WARNA[warna];
 		daftarTitik.push({
-			"x": Number(ax.value) + px,
-			"y": Number(ay.value) + py,
+			"x": ax_ + px,
+			"y": ay_ + py,
 			"color": kode == undefined ? 31 : kode,
-			"priority": 3 // selalu 3
+			"priority": pr_
 		});
 	}
 	}
@@ -102,6 +107,7 @@ function olahGambar() {
 
 ax.addEventListener("change", olahGambar);
 ay.addEventListener("change", olahGambar);
+pr.addEventListener("change", olahGambar);
 input.addEventListener("change", perbaruiGambar);
 	</script>
 </body>
